@@ -1,0 +1,188 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Easy Social Share Buttons\n"
+"POT-Creation-Date: 2015-05-06 16:31-0800\n"
+"PO-Revision-Date: 2015-05-06 16:32-0800\n"
+"Last-Translator: \n"
+"Language-Team: Idiom\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: /Users/andrewlaskey/Documents/Idiom/GitLab/wp-sharing-"
+"plugin\n"
+
+#: /Users/andrewlaskey/Documents/Idiom/GitLab/wp-sharing-plugin/easy-social-share-buttons/includes/class-easy-social-share-buttons-settings.php:70
+msgid "Easy Social Share Button Settings"
+msgstr ""
+
+#: /Users/andrewlaskey/Documents/Idiom/GitLab/wp-sharing-plugin/easy-social-share-buttons/includes/class-easy-social-share-buttons-settings.php:91
+msgid "Settings"
+msgstr ""
+
+#: /Users/andrewlaskey/Documents/Idiom/GitLab/wp-sharing-plugin/easy-social-share-buttons/includes/class-easy-social-share-buttons-settings.php:103
+msgid "Post Share Buttons"
+msgstr ""
+
+#: /Users/andrewlaskey/Documents/Idiom/GitLab/wp-sharing-plugin/easy-social-share-buttons/includes/class-easy-social-share-buttons-settings.php:104
+msgid "Options for showing social sharing buttons on posts"
+msgstr ""
+
+#: /Users/andrewlaskey/Documents/Idiom/GitLab/wp-sharing-plugin/easy-social-share-buttons/includes/class-easy-social-share-buttons-settings.php:108
+msgid "Share Button Type"
+msgstr ""
+
+#: /Users/andrewlaskey/Documents/Idiom/GitLab/wp-sharing-plugin/easy-social-share-buttons/includes/class-easy-social-share-buttons-settings.php:109
+msgid ""
+"Show basic share buttons, or share buttons that also show the number of "
+"shares."
+msgstr ""
+
+#: /Users/andrewlaskey/Documents/Idiom/GitLab/wp-sharing-plugin/easy-social-share-buttons/includes/class-easy-social-share-buttons-settings.php:116
+msgid "Share Button Location"
+msgstr ""
+
+#: /Users/andrewlaskey/Documents/Idiom/GitLab/wp-sharing-plugin/easy-social-share-buttons/includes/class-easy-social-share-buttons-settings.php:117
+msgid "Select where you would like the sharing buttons to display."
+msgstr ""
+
+#: /Users/andrewlaskey/Documents/Idiom/GitLab/wp-sharing-plugin/easy-social-share-buttons/includes/class-easy-social-share-buttons-settings.php:124
+#: /Users/andrewlaskey/Documents/Idiom/GitLab/wp-sharing-plugin/easy-social-share-buttons/includes/class-easy-social-share-buttons-settings.php:154
+msgid "Social Sites"
+msgstr ""
+
+#: /Users/andrewlaskey/Documents/Idiom/GitLab/wp-sharing-plugin/easy-social-share-buttons/includes/class-easy-social-share-buttons-settings.php:125
+#: /Users/andrewlaskey/Documents/Idiom/GitLab/wp-sharing-plugin/easy-social-share-buttons/includes/class-easy-social-share-buttons-settings.php:155
+msgid "Select which sharing buttons you would like to display."
+msgstr ""
+
+#: /Users/andrewlaskey/Documents/Idiom/GitLab/wp-sharing-plugin/easy-social-share-buttons/includes/class-easy-social-share-buttons-settings.php:132
+#: /Users/andrewlaskey/Documents/Idiom/GitLab/wp-sharing-plugin/easy-social-share-buttons/includes/class-easy-social-share-buttons-settings.php:300
+msgid "Facebook App Id"
+msgstr ""
+
+#: /Users/andrewlaskey/Documents/Idiom/GitLab/wp-sharing-plugin/easy-social-share-buttons/includes/class-easy-social-share-buttons-settings.php:133
+msgid ""
+"Facebook Sharing requires that you register an app with Facebook. See below "
+"for instructions."
+msgstr ""
+
+#: /Users/andrewlaskey/Documents/Idiom/GitLab/wp-sharing-plugin/easy-social-share-buttons/includes/class-easy-social-share-buttons-settings.php:136
+msgid "ex: XXXXXXXXXXXXXXX"
+msgstr ""
+
+#: /Users/andrewlaskey/Documents/Idiom/GitLab/wp-sharing-plugin/easy-social-share-buttons/includes/class-easy-social-share-buttons-settings.php:142
+msgid "Media Share Buttons"
+msgstr ""
+
+#: /Users/andrewlaskey/Documents/Idiom/GitLab/wp-sharing-plugin/easy-social-share-buttons/includes/class-easy-social-share-buttons-settings.php:143
+msgid "Options for displaying share buttons on post media."
+msgstr ""
+
+#: /Users/andrewlaskey/Documents/Idiom/GitLab/wp-sharing-plugin/easy-social-share-buttons/includes/class-easy-social-share-buttons-settings.php:147
+msgid "Display Media Share Buttons"
+msgstr ""
+
+#: /Users/andrewlaskey/Documents/Idiom/GitLab/wp-sharing-plugin/easy-social-share-buttons/includes/class-easy-social-share-buttons-settings.php:164
+msgid "Advanced Options"
+msgstr ""
+
+#: /Users/andrewlaskey/Documents/Idiom/GitLab/wp-sharing-plugin/easy-social-share-buttons/includes/class-easy-social-share-buttons-settings.php:165
+msgid "More customization for experienced Wordpress Theme developers."
+msgstr ""
+
+#: /Users/andrewlaskey/Documents/Idiom/GitLab/wp-sharing-plugin/easy-social-share-buttons/includes/class-easy-social-share-buttons-settings.php:169
+msgid "Enqueue plugin CSS"
+msgstr ""
+
+#: /Users/andrewlaskey/Documents/Idiom/GitLab/wp-sharing-plugin/easy-social-share-buttons/includes/class-easy-social-share-buttons-settings.php:170
+msgid ""
+"Turn this off if you want to include this plugin's CSS within your theme's "
+"CSS to reduce HTTP requests and increase page load speed, or if you want to "
+"customize the buttons with your own styles."
+msgstr ""
+
+#: /Users/andrewlaskey/Documents/Idiom/GitLab/wp-sharing-plugin/easy-social-share-buttons/includes/class-easy-social-share-buttons-settings.php:240
+msgid "Easy Social Share Settings"
+msgstr ""
+
+#: /Users/andrewlaskey/Documents/Idiom/GitLab/wp-sharing-plugin/easy-social-share-buttons/includes/class-easy-social-share-buttons-settings.php:292
+msgid "Save Settings"
+msgstr ""
+
+#: /Users/andrewlaskey/Documents/Idiom/GitLab/wp-sharing-plugin/easy-social-share-buttons/includes/class-easy-social-share-buttons-settings.php:296
+msgid "Shortcodes"
+msgstr ""
+
+#: /Users/andrewlaskey/Documents/Idiom/GitLab/wp-sharing-plugin/easy-social-share-buttons/includes/class-easy-social-share-buttons-settings.php:297
+msgid ""
+"Use this shortcode to add sharing buttons to your content or in your "
+"template files."
+msgstr ""
+
+#: /Users/andrewlaskey/Documents/Idiom/GitLab/wp-sharing-plugin/easy-social-share-buttons/includes/class-easy-social-share-buttons-settings.php:301
+msgid "Sharing on facebook requires that you have a Facebook App Id."
+msgstr ""
+
+#: /Users/andrewlaskey/Documents/Idiom/GitLab/wp-sharing-plugin/easy-social-share-buttons/includes/class-easy-social-share-buttons-settings.php:303
+msgid "Go to "
+msgstr ""
+
+#: /Users/andrewlaskey/Documents/Idiom/GitLab/wp-sharing-plugin/easy-social-share-buttons/includes/class-easy-social-share-buttons-settings.php:304
+msgid "Log in using your existing Facebook account or create a new one."
+msgstr ""
+
+#: /Users/andrewlaskey/Documents/Idiom/GitLab/wp-sharing-plugin/easy-social-share-buttons/includes/class-easy-social-share-buttons-settings.php:305
+msgid "Under \"My Apps\" in the header, select \"Add a New App\"."
+msgstr ""
+
+#: /Users/andrewlaskey/Documents/Idiom/GitLab/wp-sharing-plugin/easy-social-share-buttons/includes/class-easy-social-share-buttons-settings.php:306
+msgid "Select \"website\"."
+msgstr ""
+
+#: /Users/andrewlaskey/Documents/Idiom/GitLab/wp-sharing-plugin/easy-social-share-buttons/includes/class-easy-social-share-buttons-settings.php:307
+msgid "Choose a name for your new app."
+msgstr ""
+
+#: /Users/andrewlaskey/Documents/Idiom/GitLab/wp-sharing-plugin/easy-social-share-buttons/includes/class-easy-social-share-buttons-settings.php:308
+msgid ""
+"Skip the quick set-up and go to your app's dashboard. The App ID will be at "
+"the top under your app's name."
+msgstr ""
+
+#: /Users/andrewlaskey/Documents/Idiom/GitLab/wp-sharing-plugin/easy-social-share-buttons/includes/class-easy-social-share-buttons-settings.php:309
+msgid ""
+"Under \"Settings\", fill in the fields for \"Namespace\" and \"Contact Email"
+"\"."
+msgstr ""
+
+#: /Users/andrewlaskey/Documents/Idiom/GitLab/wp-sharing-plugin/easy-social-share-buttons/includes/class-easy-social-share-buttons-settings.php:310
+msgid ""
+"Finally, go to \"Status & Review\" and click the button to make your app "
+"public."
+msgstr ""
+
+#: /Users/andrewlaskey/Documents/Idiom/GitLab/wp-sharing-plugin/easy-social-share-buttons/includes/class-easy-social-share-buttons-settings.php:341
+#: /Users/andrewlaskey/Documents/Idiom/GitLab/wp-sharing-plugin/easy-social-share-buttons/includes/class-easy-social-share-buttons-settings.php:350
+#: /Users/andrewlaskey/Documents/Idiom/GitLab/wp-sharing-plugin/easy-social-share-buttons/includes/class-easy-social-share-buttons.php:181
+#: /Users/andrewlaskey/Documents/Idiom/GitLab/wp-sharing-plugin/easy-social-share-buttons/includes/class-easy-social-share-buttons.php:190
+msgid "Cheatin&#8217; huh?"
+msgstr ""
+
+#: /Users/andrewlaskey/Documents/Idiom/GitLab/wp-sharing-plugin/easy-social-share-buttons/includes/lib/class-easy-social-share-buttons-admin-api.php:159
+msgid "Upload an image"
+msgstr ""
+
+#: /Users/andrewlaskey/Documents/Idiom/GitLab/wp-sharing-plugin/easy-social-share-buttons/includes/lib/class-easy-social-share-buttons-admin-api.php:159
+msgid "Use image"
+msgstr ""
+
+#: /Users/andrewlaskey/Documents/Idiom/GitLab/wp-sharing-plugin/easy-social-share-buttons/includes/lib/class-easy-social-share-buttons-admin-api.php:159
+msgid "Upload new image"
+msgstr ""
+
+#: /Users/andrewlaskey/Documents/Idiom/GitLab/wp-sharing-plugin/easy-social-share-buttons/includes/lib/class-easy-social-share-buttons-admin-api.php:160
+msgid "Remove image"
+msgstr ""
