@@ -43,6 +43,10 @@ Installing "Easy Social Share Buttons" can be done either by searching for "Easy
 
 == Changelog ==
 
+= 1.1 =
+* 2015-05-11
+* Fixed bug to prevent buttons from showing up in excerpts
+
 = 1.0 =
 * 2015-05-07
 * Initial release

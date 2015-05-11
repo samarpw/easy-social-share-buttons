@@ -526,21 +526,23 @@ class Easy_Social_Share_Buttons {
 	 * @return  string
 	 */
 	public function add_share_buttons_to_post($content) {
-		$location = get_option('ess_share_location');
+		if (is_single()) {
+			$location = get_option('ess_share_location');
 
-		$button_type = get_option( 'ess_share_type' );
-		$show_count = false;
+			$button_type = get_option( 'ess_share_type' );
+			$show_count = false;
 
-		if ($button_type == 'count') {
-			$show_count = true;
-		}
-
-		foreach($location as $position) {
-			if ($position == 'before') {
-				$content = $this->build_share_buttons($show_count) . $content;
+			if ($button_type == 'count') {
+				$show_count = true;
 			}
-			if ($position == 'after') {
-				$content = $content . $this->build_share_buttons($show_count);
+
+			foreach($location as $position) {
+				if ($position == 'before') {
+					$content = $this->build_share_buttons($show_count) . $content;
+				}
+				if ($position == 'after') {
+					$content = $content . $this->build_share_buttons($show_count);
+				}
 			}
 		}
 		
