@@ -65,6 +65,10 @@ class Easy_Social_Share_Buttons_Admin_API {
 			$data = '';
 		}
 
+		if (is_array($field['default']) && $data == '') {
+			$data = array();
+		}
+
 		$html = '';
 
 		switch( $field['type'] ) {

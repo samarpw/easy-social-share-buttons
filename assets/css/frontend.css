@@ -1,11 +1,13 @@
-.ess-buttons {
+ul.ess-buttons {
   margin: 0;
+  padding: 0;
   list-style-type: none;
   font-size: 16px;
   line-height: 1.5em; }
-  .ess-buttons li {
-    display: inline-block; }
-  .ess-buttons a.ess-button {
+  ul.ess-buttons li {
+    display: inline-block;
+    margin: 0; }
+  ul.ess-buttons a.ess-button {
     display: inline-block;
     padding-right: 0.25em;
     padding-bottom: 0.5em;
@@ -24,6 +26,7 @@
   top: -9999px;
   left: -9999px; }
 
+.ess-buttons--text .ess-share-text,
 .ess-buttons--count .ess-share-text {
   position: relative;
   top: auto;
@@ -116,6 +119,7 @@
     bottom: 0;
     right: 0;
     opacity: 0;
+    margin-bottom: 0;
     visibility: hidden;
     -webkit-transition: opacity 0.2s ease;
     transition: opacity 0.2s ease; }
@@ -133,10 +137,10 @@
   transition: opacity 0.2s ease; }
 
 .ess-share-link {
+  box-sizing: border-box;
   padding: 0.1em 0.6em;
+  width: 100%;
   color: #222222;
   background: #ffffff;
   border: none;
   border-radius: 3px; }
-
-/*# sourceMappingURL=frontend.css.map */

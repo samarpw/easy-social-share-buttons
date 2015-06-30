@@ -3,7 +3,7 @@ Contributors: brianbrey
 Tags: wordpress, plugin, social sharing
 Requires at least: 3.9
 Tested up to: 4.0
-Stable tag: 1.0
+Stable tag: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -43,6 +43,14 @@ Installing "Easy Social Share Buttons" can be done either by searching for "Easy
 
 == Changelog ==
 
+= 1.2 =
+* 2015-06-30
+* Fixed styles to make plugin compatible with Twenty Twelve, Twenty Thirteen, and Twenty Fourteen themes
+* Added option to show button text without share count
+* Fixed Facebook bug, when trying to share posts with featured images
+* Updated documentation on how to correctly display shorcode within theme files
+* Fixed debug notices when unselecting all multiple checkbox options
+
 = 1.1 =
 * 2015-05-11
 * Fixed bug to prevent buttons from showing up in excerpts
@@ -52,6 +60,10 @@ Installing "Easy Social Share Buttons" can be done either by searching for "Easy
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.2 =
+* 2015-06-30
+* Added additional options and fixed several bugs to remove debug notices and to fix erros when sharing posts to facebook.
 
 = 1.0 =
 * 2015-05-07

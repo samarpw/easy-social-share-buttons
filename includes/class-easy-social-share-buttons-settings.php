@@ -68,18 +68,6 @@ class Easy_Social_Share_Buttons_Settings {
 	 */
 	public function add_menu_item () {
 		$page = add_options_page( __( 'Easy Social Share Button Settings', 'easy-social-share-buttons' ) , __( 'Easy Social Share', 'easy-social-share-buttons' ) , 'manage_options' , $this->parent->_token . '_settings' ,  array( $this, 'settings_page' ) );
-		add_action( 'admin_print_styles-' . $page, array( $this, 'settings_assets' ) );
-	}
-
-	/**
-	 * Load settings JS & CSS
-	 * @return void
-	 */
-	public function settings_assets () {
-
-
-    	wp_register_script( $this->parent->_token . '-settings-js', $this->parent->assets_url . 'js/settings' . $this->parent->script_suffix . '.js', array( 'jquery' ), '1.0.0' );
-    	wp_enqueue_script( $this->parent->_token . '-settings-js' );
 	}
 
 	/**
@@ -108,7 +96,7 @@ class Easy_Social_Share_Buttons_Settings {
 					'label'			=> __( 'Share Button Type', 'easy-social-share-buttons' ),
 					'description'	=> __( 'Show basic share buttons, or share buttons that also show the number of shares.', 'easy-social-share-buttons' ),
 					'type'			=> 'radio',
-					'options'		=> array( 'basic' => 'Basic', 'count' => 'Share Count'),
+					'options'		=> array( 'basic' => 'Basic (icon only)', 'text' => 'Icon and Text', 'count' => 'Share Count'),
 					'default'		=> 'basic'
 				),
 				array(
@@ -295,8 +283,8 @@ class Easy_Social_Share_Buttons_Settings {
 
 			$html .= '<h3>' . __('Shortcodes', 'easy-social-share-buttons') . '</h3>' . "\n";
 			$html .= '<p>' . __('Use this shortcode to add sharing buttons to your content or in your template files.', 'easy-social-share-buttons') . '</p>' . "\n";
-			$html .= '<pre>[ess_post]</pre><pre>[ess_post share_type="count"]</pre>' . "\n";
-			$html .= '<pre>&lt;?php do_shortcode( \'[ess_post]\' ); ?&gt;</pre>' . "\n";
+			$html .= '<pre>[ess_post]</pre><pre>[ess_post share_type="count"]</pre><pre>[ess_post share_type="text"]</pre>' . "\n";
+			$html .= '<pre>&lt;?php echo do_shortcode( \'[ess_post]\' ); ?&gt;</pre>' . "\n";
 			$html .= '<h3>' . __('Facebook App Id', 'easy-social-share-buttons') . '</h3>' . "\n";
 			$html .= '<p>' . __('Sharing on facebook requires that you have a Facebook App Id.', 'easy-social-share-buttons') . '</p>' . "\n";
 			$html .= '<ol>' . "\n";

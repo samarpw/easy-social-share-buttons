@@ -374,7 +374,15 @@ class Easy_Social_Share_Buttons {
 		$title = $this->mb_rawurlencode( get_the_title( $post_id ) );
 		$description = $this->mb_rawurlencode( $this->get_excerpt_by_id( $post_id ) );
 		$link = rawurlencode( get_permalink( $post_id ) );
-		$direct_link = get_permalink( $post_id ) . ($image_id ? '/#' . $image_id : '');
+
+		if ( get_option('permalink_structure') ) {
+			$slash = '';	
+		} else {
+			// if pretty permalinks are not enabled add slash
+			$slash = '/';
+		}
+
+		$direct_link = get_permalink( $post_id ) . ($image_id ? $slash . '#' . $image_id : '');
 		$current_url = $this->get_current_url();
 		$button = '';
 
@@ -389,7 +397,7 @@ class Easy_Social_Share_Buttons {
 			    $facebook_share_url .= '&amp;description=' . $description;
 			    $facebook_share_url .= '&amp;redirect_uri=' . $link;
 
-			    if ($image_url) {
+			    if (!empty($image_url)) {
 			    	$facebook_share_url .= '&amp;picture=' . rawurlencode( $image_url );
 			    }
 
@@ -500,21 +508,51 @@ class Easy_Social_Share_Buttons {
 	 * @since   1.0.0
 	 * @return  string
 	 */
-	private function build_share_buttons($show_count) {
+	private function build_share_buttons($button_type) {
 		global $post;
 
-		$html = '<ul class="ess-buttons' . ($show_count ? ' ess-buttons--count' : '') . '">' . "\n";
+		$html = '';
 
 		$sites = get_option('ess_social_sites');
 
-		foreach($sites as $site) {
+		if ( is_array( $sites ) ) {
 
-			$button = $this->get_button_html($site, $post->ID, $show_count, get_the_post_thumbnail( $post->ID ));
+			$extra_classes = '';
+			$show_count = false;
 
-			$html .= '<li>' . $button . '</li>' . "\n";
+			switch ($button_type) {
+				case 'text':
+					$extra_classes = 'ess-buttons--text';
+					break;
+				case 'count':
+					$extra_classes = 'ess-buttons--count';
+					$show_count = true;
+					break;
+			}
+
+			$html = '<ul class="ess-buttons ' . $extra_classes . '">' . "\n";
+
+			// Get post thumbnail if it has one
+			$thumbnail_url = '';
+			$thumbnail_id = get_post_thumbnail_id( $post->ID );
+
+			if ( !empty( $thumbnail_id ) ) {
+				$thumbnail = wp_get_attachment_image_src($thumbnail_id,'large', true);
+
+				if ( $thumbnail ) {
+					$thumbnail_url = $thumbnail[0];
+				}
+			}
+		
+			foreach($sites as $site) {
+
+				$button = $this->get_button_html($site, $post->ID, $show_count, $thumbnail_url);
+
+				$html .= '<li>' . $button . '</li>' . "\n";
+			}
+
+			$html .= '</ul>' . "\n";
 		}
-
-		$html .= '</ul>' . "\n";
 
 		return $html;
 	} // End build_share_buttons()
@@ -530,18 +568,15 @@ class Easy_Social_Share_Buttons {
 			$location = get_option('ess_share_location');
 
 			$button_type = get_option( 'ess_share_type' );
-			$show_count = false;
 
-			if ($button_type == 'count') {
-				$show_count = true;
-			}
-
-			foreach($location as $position) {
-				if ($position == 'before') {
-					$content = $this->build_share_buttons($show_count) . $content;
-				}
-				if ($position == 'after') {
-					$content = $content . $this->build_share_buttons($show_count);
+			if ( is_array( $location ) ) {
+				foreach($location as $position) {
+					if ($position == 'before') {
+						$content = $this->build_share_buttons($button_type) . $content;
+					}
+					if ($position == 'after') {
+						$content = $content . $this->build_share_buttons($button_type);
+					}
 				}
 			}
 		}
@@ -565,13 +600,9 @@ class Easy_Social_Share_Buttons {
 			'share_type' => 'basic'
 		), $atts );
 
-		$show_count = false;
+		$button_type = $options['share_type'];
 
-		if ($options['share_type'] == 'count') {
-			$show_count = true;
-		}
-
-		return $this->build_share_buttons($show_count);
+		return $this->build_share_buttons($button_type);
 	} // End share_post_shortcode()
 
 	/**
@@ -583,7 +614,7 @@ class Easy_Social_Share_Buttons {
 	public function add_share_buttons_to_media($content) {
 		global $post;
 
-		if (get_option('ess_load_css')) {
+		if (get_option('show_media_buttons')) {
 	
 			$content = do_shortcode($content);
 

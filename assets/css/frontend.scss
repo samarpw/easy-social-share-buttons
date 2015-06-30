@@ -16,14 +16,16 @@ $ess-google:		#dd4b39;
 $ess-pinterest:		#cb2027;
 $ess-email:			#999999;
 
-.ess-buttons {
+ul.ess-buttons {
 	margin: 0;
+	padding: 0;
 	list-style-type: none;
 	font-size: $ess-font-size;
 	line-height: $ess-line-height;
 	
 	li {
 		display: inline-block;
+		margin: 0;
 	}
 
 	a.ess-button {
@@ -49,12 +51,15 @@ $ess-email:			#999999;
 	left: -9999px;
 }
 
-.ess-buttons--count .ess-share-text {
-	position: relative;
-	top: auto;
-	left: auto;
-	display: inline-block;
-	margin-left: 5px;
+.ess-buttons--text,
+.ess-buttons--count {
+	.ess-share-text {
+		position: relative;
+		top: auto;
+		left: auto;
+		display: inline-block;
+		margin-left: 5px;
+	}
 }
 
 .ess-icon {
@@ -202,6 +207,7 @@ $ess-email:			#999999;
 		bottom: 0;
 		right: 0;
 		opacity: 0;
+		margin-bottom: 0;
 		visibility: hidden;
 		-webkit-transition: opacity 0.2s ease;
 		transition: opacity 0.2s ease;
@@ -222,7 +228,9 @@ $ess-email:			#999999;
 }
 
 .ess-share-link {
+	box-sizing: border-box;
 	padding: 0.1em 0.6em;
+	width: 100%;
 	color: $ess-input-color;
 	background: $ess-input-bg;
 	border: none;
