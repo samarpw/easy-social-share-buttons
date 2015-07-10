@@ -1,0 +1,146 @@
+ul.ess-buttons {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: 16px;
+  line-height: 1.5em; }
+  ul.ess-buttons li {
+    display: inline-block;
+    margin: 0; }
+  ul.ess-buttons a.ess-button {
+    display: inline-block;
+    padding-right: 0.25em;
+    padding-bottom: 0.5em;
+    text-decoration: none;
+    border: none; }
+
+.ess-button-inner,
+.ess-social-count {
+  display: inline-block;
+  padding: 0.1em 0.6em;
+  color: #ffffff;
+  border-radius: 3px; }
+
+.ess-share-text {
+  position: absolute;
+  top: -9999px;
+  left: -9999px; }
+
+.ess-buttons--text .ess-share-text,
+.ess-buttons--count .ess-share-text {
+  position: relative;
+  top: auto;
+  left: auto;
+  display: inline-block;
+  margin-left: 5px; }
+
+.ess-icon {
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  fill: #ffffff;
+  vertical-align: -0.1em; }
+
+.ess-button:visited .ess-button-inner,
+.ess-button:visited .ess-social-count {
+  color: #ffffff; }
+
+.ess-button--facebook .ess-button-inner,
+.ess-button--facebook .ess-social-count {
+  background: #3b5998; }
+.ess-button--facebook:hover .ess-button-inner,
+.ess-button--facebook:hover .ess-social-count, .ess-button--facebook:active .ess-button-inner,
+.ess-button--facebook:active .ess-social-count, .ess-button--facebook:focus .ess-button-inner,
+.ess-button--facebook:focus .ess-social-count {
+  background: #4466ae; }
+
+.ess-button--twitter .ess-button-inner,
+.ess-button--twitter .ess-social-count {
+  background: #00aced; }
+.ess-button--twitter:hover .ess-button-inner,
+.ess-button--twitter:hover .ess-social-count, .ess-button--twitter:active .ess-button-inner,
+.ess-button--twitter:active .ess-social-count, .ess-button--twitter:focus .ess-button-inner,
+.ess-button--twitter:focus .ess-social-count {
+  background: #0dbdff; }
+
+.ess-button--gplus .ess-button-inner,
+.ess-button--gplus .ess-social-count {
+  background: #dd4b39; }
+.ess-button--gplus:hover .ess-button-inner,
+.ess-button--gplus:hover .ess-social-count, .ess-button--gplus:active .ess-button-inner,
+.ess-button--gplus:active .ess-social-count, .ess-button--gplus:focus .ess-button-inner,
+.ess-button--gplus:focus .ess-social-count {
+  background: #e16353; }
+
+.ess-button--pinterest .ess-button-inner,
+.ess-button--pinterest .ess-social-count {
+  background: #cb2027; }
+.ess-button--pinterest:hover .ess-button-inner,
+.ess-button--pinterest:hover .ess-social-count, .ess-button--pinterest:active .ess-button-inner,
+.ess-button--pinterest:active .ess-social-count, .ess-button--pinterest:focus .ess-button-inner,
+.ess-button--pinterest:focus .ess-social-count {
+  background: #de2c33; }
+
+.ess-button--email .ess-button-inner,
+.ess-button--email .ess-social-count {
+  background: #999999; }
+.ess-button--email:hover .ess-button-inner,
+.ess-button--email:hover .ess-social-count, .ess-button--email:active .ess-button-inner,
+.ess-button--email:active .ess-social-count, .ess-button--email:focus .ess-button-inner,
+.ess-button--email:focus .ess-social-count {
+  background: #a8a8a8; }
+
+.ess-button--link .ess-button-inner,
+.ess-button--link .ess-social-count {
+  background: #999999; }
+.ess-button--link:hover .ess-button-inner,
+.ess-button--link:hover .ess-social-count, .ess-button--link:active .ess-button-inner,
+.ess-button--link:active .ess-social-count, .ess-button--link:focus .ess-button-inner,
+.ess-button--link:focus .ess-social-count {
+  background: #a8a8a8; }
+.ess-button--link:hover .ess-share-link-wrap, .ess-button--link:active .ess-share-link-wrap, .ess-button--link:focus .ess-share-link-wrap {
+  opacity: 1;
+  visibility: visible; }
+
+.ess-image-wrap {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  line-height: 0;
+  max-width: 100%; }
+  .ess-image-wrap > a {
+    display: inline-block;
+    max-width: 100%; }
+  .ess-image-wrap:hover .ess-buttons, .ess-image-wrap:active .ess-buttons, .ess-image-wrap:focus .ess-buttons {
+    opacity: 1;
+    visibility: visible; }
+  .ess-image-wrap .ess-buttons {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    margin-bottom: 0;
+    visibility: hidden;
+    -webkit-transition: opacity 0.2s ease;
+    transition: opacity 0.2s ease; }
+
+.ess-share-link-wrap {
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  padding-right: 0.25em;
+  padding-bottom: 0.5em;
+  width: 150%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease; }
+
+.ess-share-link {
+  box-sizing: border-box;
+  padding: 0.1em 0.6em;
+  width: 100%;
+  color: #222222;
+  background: #ffffff;
+  border: none;
+  border-radius: 3px; }
