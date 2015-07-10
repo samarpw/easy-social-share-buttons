@@ -1,13 +1,13 @@
 <?php
 /*
  * Plugin Name: Easy Social Share Buttons
- * Version: 1.0
+ * Version: 1.2
  * Plugin URI: http://www.idiom.co/
  * Description: Easily add social sharing buttons to your posts and images without slowing down your site with unnecessary javascript and image files.
  * Author: Idiom Interactive
  * Author URI: http://www.idiom.co/
  * Requires at least: 4.0
- * Tested up to: 4.0
+ * Tested up to: 4.2.2
  *
  * Text Domain: easy-social-share-buttons
  * Domain Path: /lang/
